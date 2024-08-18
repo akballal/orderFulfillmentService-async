@@ -67,4 +67,6 @@ public class OrderFulfillmentService {
         Thread.sleep(3000L);
         log.info("Trailer assigned and Order dispatched " + Thread.currentThread().getName());
     }
+
+    // Return type of @Async methods can be void or completablefuture only.
 }
